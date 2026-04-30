@@ -37,6 +37,7 @@
     <li><a href="#properties" data-cursor>Buy</a></li>
     <li><a href="#properties" data-cursor>Rent</a></li>
     <li><a href="#projects" data-cursor>Off-Plan</a></li>
+    <li><a href="#agents" data-cursor>Agents</a></li>
     <li><a href="#mortgage" data-cursor>Mortgage</a></li>
     <li><a href="#contact" data-cursor>Contact</a></li>
   </ul>
@@ -52,6 +53,7 @@
     <li><a href="#properties">Buy</a></li>
     <li><a href="#properties">Rent</a></li>
     <li><a href="#projects">Off-Plan</a></li>
+    <li><a href="#agents">Agents</a></li>
     <li><a href="#mortgage">Mortgage</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#sell">Sell your property</a></li>
@@ -78,18 +80,24 @@
         <button class="filter-pill" type="button" data-cursor>Commercial</button>
       </div>
       <div class="hero__searchbar__input">
-        <input type="text" placeholder="Search By Area Or Project" aria-label="Search by area or project">
+        <svg class="hero__searchbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg>
+        <input type="text" placeholder="Search by area or project" aria-label="Search by area or project">
         <div class="hero__searchbar__divider"></div>
-        <select aria-label="Select Type">
-          <option value="">Select Type</option>
-          <option>Apartment</option>
-          <option>Villa</option>
-          <option>Townhouse</option>
-          <option>Penthouse</option>
-          <option>Studio</option>
-          <option>Commercial</option>
-          <option>Office</option>
-        </select>
+        <div class="hero__searchbar__select-wrap">
+          <select aria-label="Select Type">
+            <option value="">Select Type</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>Townhouse</option>
+            <option>Penthouse</option>
+            <option>Studio</option>
+            <option>Commercial</option>
+            <option>Office</option>
+          </select>
+        </div>
+        <button class="hero__searchbar__submit" type="button" aria-label="Search" data-cursor>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
       </div>
     </div>
   </div>
@@ -351,6 +359,26 @@
       <div class="why__bg" style="background-image: url('https://www.creativehomes.ae/_next/static/media/img_4.b735dee7.png');"></div>
       <div class="why__veil"></div>
       <h3 class="why__title">Social-Media <em>Reach.</em></h3>
+    </div>
+  </div>
+</section>
+
+<!-- AGENTS / MEET THE TEAM -->
+<section class="agents" id="agents">
+  <div class="agents__bg" style="background-image: url('https://www.creativehomes.ae/_next/static/media/Project_4.9c8dd934.jpg');" aria-hidden="true"></div>
+  <div class="agents__veil"></div>
+  <div class="agents__inner">
+    <div class="agents__copy" data-fade>
+      <p class="eyebrow eyebrow--light">Our Agents</p>
+      <h2 class="section-title section-title--light">Meet the<br><em>specialists.</em></h2>
+      <p class="agents__body">Our specialists cover Dubai's key communities — Residential &amp; Commercial Sales and Leasing, Off-Plan Investments, Property Management, and more. Whether you're looking to invest, buy, sell, or rent, our dedicated agents are here to guide you through every step of the process.</p>
+      <a href="https://www.creativehomes.ae/meet-the-team" target="_blank" rel="noopener" class="btn-light" data-cursor>Meet our team <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="agents__strip" data-fade>
+      <div class="agents__chip"><span class="agents__chip__lbl">Residential Sales</span></div>
+      <div class="agents__chip"><span class="agents__chip__lbl">Commercial Leasing</span></div>
+      <div class="agents__chip"><span class="agents__chip__lbl">Off-Plan Investment</span></div>
+      <div class="agents__chip"><span class="agents__chip__lbl">Property Management</span></div>
     </div>
   </div>
 </section>
