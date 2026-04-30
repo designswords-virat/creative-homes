@@ -41,6 +41,17 @@
   });
 })();
 
+// ---------- Hero filter pills ----------
+(function () {
+  var pills = document.querySelectorAll('.hero__searchbar__pills .filter-pill');
+  if (!pills.length) return;
+  pills.forEach(function (p) {
+    p.addEventListener('click', function () {
+      pills.forEach(function (x) { x.classList.toggle('is-active', x === p); });
+    });
+  });
+})();
+
 // ---------- Hero carousel ----------
 (function () {
   var slides = document.querySelectorAll('.hero__slide');
