@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Creative Homes — Dubai's premier real-estate house. Buy, rent, invest in off-plan & prime properties across the city.">
+<meta property="og:title" content="Creative Homes — Dubai Real Estate">
+<meta property="og:description" content="Buy, rent, invest. Twelve trusted developers. Twenty-two prime communities.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0E3528">
+<title>Creative Homes — Dubai Real Estate</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__word">Creative <em>Homes</em></div>
+  <div class="loader__rule"></div>
+</div>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav__brand" data-cursor>
+    <span class="nav__brand__mark">Creative <em>Homes</em></span>
+  </a>
+  <ul class="nav__links">
+    <li><a href="#properties" data-cursor>Buy</a></li>
+    <li><a href="#properties" data-cursor>Rent</a></li>
+    <li><a href="#projects" data-cursor>Off-Plan</a></li>
+    <li><a href="#mortgage" data-cursor>Mortgage</a></li>
+    <li><a href="#contact" data-cursor>Contact</a></li>
+  </ul>
+  <a href="#sell" class="nav__cta" data-cursor>Sell your property <span aria-hidden="true">→</span></a>
+  <button class="nav__hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <ul>
+    <li><a href="#properties">Buy</a></li>
+    <li><a href="#properties">Rent</a></li>
+    <li><a href="#projects">Off-Plan</a></li>
+    <li><a href="#mortgage">Mortgage</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#sell">Sell your property</a></li>
+  </ul>
+  <a href="tel:+97142387671" class="mobile-menu__phone">+971 4 238 7671</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__slides" id="heroSlides">
+    <div class="hero__slide is-active" style="background-image: url('https://www.creativehomes.ae/_next/static/media/3600.7ba0f878.jpg');"></div>
+    <div class="hero__slide" style="background-image: url('https://www.creativehomes.ae/_next/static/media/Project_2.8a96bba5.jpg');"></div>
+    <div class="hero__slide" style="background-image: url('https://www.creativehomes.ae/_next/static/media/Project_3.beb3d238.jpg');"></div>
+    <div class="hero__slide" style="background-image: url('https://www.creativehomes.ae/_next/static/media/Project_4.9c8dd934.jpg');"></div>
+  </div>
+  <div class="hero__veil"></div>
+  <div class="hero__inner">
+    <p class="hero__eyebrow" data-fade>Dubai Real Estate</p>
+    <h1 class="hero__title" data-fade>Find something <em>extraordinary.</em></h1>
+    <p class="hero__sub" data-fade>Buy, rent, invest. Twelve trusted developers. Twenty-two prime communities. One house that knows them all.</p>
+    <div class="hero__filter" data-fade>
+      <a href="#properties" class="filter-pill is-active" data-cursor>Buy</a>
+      <a href="#properties" class="filter-pill" data-cursor>Rent</a>
+      <a href="#projects" class="filter-pill" data-cursor>Off-Plan</a>
+      <a href="#properties" class="filter-pill" data-cursor>Commercial</a>
+    </div>
+  </div>
+  <div class="hero__meta">
+    <span class="hero__counter" id="heroCounter">01 / 04</span>
+    <div class="hero__dots" id="heroDots">
+      <button class="hero__dot is-active" data-i="0" aria-label="Slide 1"></button>
+      <button class="hero__dot" data-i="1" aria-label="Slide 2"></button>
+      <button class="hero__dot" data-i="2" aria-label="Slide 3"></button>
+      <button class="hero__dot" data-i="3" aria-label="Slide 4"></button>
+    </div>
+  </div>
+</section>
+
+<!-- AWARD STRIP -->
+<section class="award" data-fade>
+  <div class="award__inner">
+    <div class="award__cell">
+      <span class="award__lbl">Awarded</span>
+      <p class="award__txt">Top Agent — Excellence at Town Square Dubai</p>
+    </div>
+    <div class="award__cell">
+      <span class="award__lbl">Reviews</span>
+      <p class="award__txt"><em>4.8 ★</em> on Google · Trusted by hundreds</p>
+    </div>
+    <div class="award__cell">
+      <span class="award__lbl">Established</span>
+      <p class="award__txt">Dubai · Sheikh Zayed Road</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOPERS MARQUEE -->
+<section class="developers">
+  <div class="developers__head" data-fade>
+    <p class="eyebrow">Trusted partner</p>
+    <h2 class="section-title">Of the most prominent <em>developers.</em></h2>
+  </div>
+  <div class="developers__marquee" aria-hidden="false">
+    <div class="developers__track">
+      <span>Binghatti</span><span class="dot">·</span>
+      <span>DAMAC</span><span class="dot">·</span>
+      <span>Ellington</span><span class="dot">·</span>
+      <span>Sobha</span><span class="dot">·</span>
+      <span>Azizi</span><span class="dot">·</span>
+      <span>Dubai Holding</span><span class="dot">·</span>
+      <span>Nshama</span><span class="dot">·</span>
+      <span>Nakheel</span><span class="dot">·</span>
+      <span>Leos</span><span class="dot">·</span>
+      <span>Symbolic</span><span class="dot">·</span>
+      <span>Meraas</span><span class="dot">·</span>
+      <span>Danube</span><span class="dot">·</span>
+      <!-- duplicate for seamless loop -->
+      <span>Binghatti</span><span class="dot">·</span>
+      <span>DAMAC</span><span class="dot">·</span>
+      <span>Ellington</span><span class="dot">·</span>
+      <span>Sobha</span><span class="dot">·</span>
+      <span>Azizi</span><span class="dot">·</span>
+      <span>Dubai Holding</span><span class="dot">·</span>
+      <span>Nshama</span><span class="dot">·</span>
+      <span>Nakheel</span><span class="dot">·</span>
+      <span>Leos</span><span class="dot">·</span>
+      <span>Symbolic</span><span class="dot">·</span>
+      <span>Meraas</span><span class="dot">·</span>
+      <span>Danube</span><span class="dot">·</span>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROPERTIES — horizontal scroll -->
+<section class="properties" id="properties">
+  <div class="properties__head" data-fade>
+    <p class="eyebrow">Featured Properties</p>
+    <h2 class="section-title">A short list,<br><em>carefully kept.</em></h2>
+    <a href="https://www.creativehomes.ae/featured-property" target="_blank" rel="noopener" class="properties__all" data-cursor>View all <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="properties__scroll" id="propScroll">
+
+    <article class="prop" data-fade>
+      <div class="prop__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/featured_11Mob.1f6bab3b.jpg');"></div>
+      <div class="prop__overlay">
+        <span class="prop__num">01</span>
+        <div class="prop__body">
+          <h3 class="prop__name">Burj Azizi</h3>
+          <p class="prop__loc">Sheikh Zayed Road, Dubai</p>
+          <span class="prop__price">AED 7,500,000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="prop" data-fade>
+      <div class="prop__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/featured_22Mob.69e84a5a.jpg');"></div>
+      <div class="prop__overlay">
+        <span class="prop__num">02</span>
+        <div class="prop__body">
+          <h3 class="prop__name">Grand Polo Club &amp; Resort</h3>
+          <p class="prop__loc">Dubailand, Dubai</p>
+          <span class="prop__price">AED 5,670,000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="prop" data-fade>
+      <div class="prop__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/featured_44Mob.be6e71ab.jpg');"></div>
+      <div class="prop__overlay">
+        <span class="prop__num">03</span>
+        <div class="prop__body">
+          <h3 class="prop__name">Elwood</h3>
+          <p class="prop__loc">The Valley, Dubai</p>
+          <span class="prop__price">AED 7,930,000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="prop" data-fade>
+      <div class="prop__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/featured_55Mob.27afa539.jpg');"></div>
+      <div class="prop__overlay">
+        <span class="prop__num">04</span>
+        <div class="prop__body">
+          <h3 class="prop__name">W Residences</h3>
+          <p class="prop__loc">Downtown Dubai</p>
+          <span class="prop__price">AED 3,200,000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="prop" data-fade>
+      <div class="prop__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/featured_66Mob.b7f6afd0.jpg');"></div>
+      <div class="prop__overlay">
+        <span class="prop__num">05</span>
+        <div class="prop__body">
+          <h3 class="prop__name">Palm Jebel Ali</h3>
+          <p class="prop__loc">Palm Jebel Ali, Dubai</p>
+          <span class="prop__price">AED 18,000,000</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+  <div class="properties__nav">
+    <button class="properties__btn" id="propPrev" aria-label="Previous">←</button>
+    <button class="properties__btn" id="propNext" aria-label="Next">→</button>
+  </div>
+</section>
+
+<!-- MORTGAGE CALCULATOR -->
+<section class="mortgage" id="mortgage">
+  <div class="mortgage__inner" data-fade>
+    <p class="eyebrow eyebrow--light">Plan your home financing</p>
+    <h2 class="section-title section-title--light">Mortgage<br><em>Calculator.</em></h2>
+    <p class="mortgage__body">A user-friendly mortgage calculator that estimates your monthly payments quickly and accurately. Whether you're a first-time homebuyer or refinancing, get a clear picture of the long-term commitment — principal, interest, fees, insurance.</p>
+    <div class="mortgage__ctas">
+      <a href="https://www.creativehomes.ae/mortgage-calculator" target="_blank" rel="noopener" class="btn-light" data-cursor>Open the calculator <span aria-hidden="true">→</span></a>
+      <a href="#contact" class="btn-ghost-light" data-cursor>Speak to the team <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <div class="mortgage__collage" data-fade>
+    <div class="mortgage__img mortgage__img--1" style="background-image: url('https://www.creativehomes.ae/_next/static/media/1.20a4fdf8.jpg');"></div>
+    <div class="mortgage__img mortgage__img--2" style="background-image: url('https://www.creativehomes.ae/_next/static/media/2.795ad1c2.jpg');"></div>
+    <div class="mortgage__img mortgage__img--3" style="background-image: url('https://www.creativehomes.ae/_next/static/media/3.928176a3.jpg');"></div>
+    <div class="mortgage__img mortgage__img--4" style="background-image: url('https://www.creativehomes.ae/_next/static/media/4.4d6a4b5e.jpg');"></div>
+  </div>
+</section>
+
+<!-- BEST NEIGHBOURHOODS -->
+<section class="neighbourhoods" id="neighbourhoods">
+  <div class="neighbourhoods__head" data-fade>
+    <p class="eyebrow">Best Neighbourhoods</p>
+    <h2 class="section-title">Where Dubai<br><em>actually lives.</em></h2>
+  </div>
+  <div class="neighbourhoods__grid">
+    <a class="hood" href="https://www.creativehomes.ae/property" target="_blank" rel="noopener" data-cursor data-fade>
+      <div class="hood__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/property_1.b0b04ab3.png');"></div>
+      <div class="hood__body">
+        <h3 class="hood__name">Palm Jumeirah</h3>
+        <span class="hood__count">23 listings</span>
+      </div>
+    </a>
+    <a class="hood" href="https://www.creativehomes.ae/property" target="_blank" rel="noopener" data-cursor data-fade>
+      <div class="hood__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/property_2.59c13b85.png');"></div>
+      <div class="hood__body">
+        <h3 class="hood__name">Jumeirah Beach</h3>
+        <span class="hood__count">31 listings</span>
+      </div>
+    </a>
+    <a class="hood" href="https://www.creativehomes.ae/property" target="_blank" rel="noopener" data-cursor data-fade>
+      <div class="hood__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/property_3.938281d1.png');"></div>
+      <div class="hood__body">
+        <h3 class="hood__name">Dubai Marina</h3>
+        <span class="hood__count">18 listings</span>
+      </div>
+    </a>
+    <a class="hood" href="https://www.creativehomes.ae/property" target="_blank" rel="noopener" data-cursor data-fade>
+      <div class="hood__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/featured_55Mob.27afa539.jpg');"></div>
+      <div class="hood__body">
+        <h3 class="hood__name">Downtown Dubai</h3>
+        <span class="hood__count">12 listings</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- UPCOMING PROJECTS -->
+<section class="projects" id="projects">
+  <div class="projects__head" data-fade>
+    <p class="eyebrow">Upcoming Projects</p>
+    <h2 class="section-title">Off-plan,<br><em>but not off the radar.</em></h2>
+    <a href="https://www.creativehomes.ae/off-plan-properties" target="_blank" rel="noopener" class="properties__all" data-cursor>View all projects <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="projects__grid">
+    <a class="project" href="https://www.creativehomes.ae/off-plan-properties" target="_blank" rel="noopener" data-cursor data-fade>
+      <div class="project__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/Project_2.8a96bba5.jpg');"></div>
+      <div class="project__body">
+        <span class="project__num">01</span>
+        <h3>Seacrest</h3>
+        <span class="project__cta">View project →</span>
+      </div>
+    </a>
+    <a class="project" href="https://www.creativehomes.ae/off-plan-properties" target="_blank" rel="noopener" data-cursor data-fade>
+      <div class="project__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/Project_3.beb3d238.jpg');"></div>
+      <div class="project__body">
+        <span class="project__num">02</span>
+        <h3>Jacob &amp; Co Residences</h3>
+        <span class="project__cta">View project →</span>
+      </div>
+    </a>
+    <a class="project" href="https://www.creativehomes.ae/off-plan-properties" target="_blank" rel="noopener" data-cursor data-fade>
+      <div class="project__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/Project_4.9c8dd934.jpg');"></div>
+      <div class="project__body">
+        <span class="project__num">03</span>
+        <h3>Trump Tower</h3>
+        <span class="project__cta">View project →</span>
+      </div>
+    </a>
+    <a class="project" href="https://www.creativehomes.ae/off-plan-properties" target="_blank" rel="noopener" data-cursor data-fade>
+      <div class="project__img" style="background-image: url('https://www.creativehomes.ae/_next/static/media/featured_44Mob.be6e71ab.jpg');"></div>
+      <div class="project__body">
+        <span class="project__num">04</span>
+        <h3>Palm Beach Towers</h3>
+        <span class="project__cta">View project →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- WHY WORK WITH US — stats -->
+<section class="why" id="why">
+  <div class="why__head" data-fade>
+    <p class="eyebrow">Why Work With Us</p>
+    <h2 class="section-title">Numbers, not<br><em>narrative.</em></h2>
+  </div>
+  <div class="why__grid">
+    <div class="why__cell" data-fade>
+      <img src="https://www.creativehomes.ae/_next/static/media/img_1.92cd9856.png" alt="" class="why__icon" loading="lazy">
+      <span class="why__num">12+</span>
+      <span class="why__lbl">Years of experience</span>
+    </div>
+    <div class="why__cell" data-fade>
+      <img src="https://www.creativehomes.ae/_next/static/media/img_2.d769d13b.png" alt="" class="why__icon" loading="lazy">
+      <span class="why__num">25,000+</span>
+      <span class="why__lbl">Email subscribers</span>
+    </div>
+    <div class="why__cell" data-fade>
+      <img src="https://www.creativehomes.ae/_next/static/media/img_3.4ea17bf8.png" alt="" class="why__icon" loading="lazy">
+      <span class="why__num">40+</span>
+      <span class="why__lbl">Active agents</span>
+    </div>
+    <div class="why__cell" data-fade>
+      <img src="https://www.creativehomes.ae/_next/static/media/img_4.b735dee7.png" alt="" class="why__icon" loading="lazy">
+      <span class="why__num">100k+</span>
+      <span class="why__lbl">Social media followers</span>
+    </div>
+  </div>
+</section>
+
+<!-- LIST YOUR PROPERTY -->
+<section class="sell" id="sell" data-fade>
+  <div class="sell__bg" style="background-image: url('https://www.creativehomes.ae/_next/static/media/featured_11Mob.1f6bab3b.jpg');" aria-hidden="true"></div>
+  <div class="sell__veil"></div>
+  <div class="sell__inner">
+    <p class="eyebrow eyebrow--light">List your property</p>
+    <h2 class="section-title section-title--light">Get the right price<br><em>for your home.</em></h2>
+    <p class="sell__sub">Apartments. Villas. Penthouses. Townhouses. We value, we list, we close — within weeks, not months.</p>
+    <div class="sell__chips">
+      <span>Apartments</span>
+      <span>Villas</span>
+      <span>Penthouses</span>
+      <span>Townhouses</span>
+      <span>Mansions</span>
+    </div>
+    <a href="https://www.creativehomes.ae/list-your-property" target="_blank" rel="noopener" class="btn-light" data-cursor>Submit property <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" data-fade>
+  <div class="newsletter__inner">
+    <div class="newsletter__copy">
+      <p class="eyebrow">Stay in the loop</p>
+      <h2 class="newsletter__title">Weekly market<br><em>notes from Dubai.</em></h2>
+    </div>
+    <form class="newsletter__form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed';">
+      <input type="email" placeholder="your email" required>
+      <button type="submit" data-cursor>Send <span aria-hidden="true">→</span></button>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact__head" data-fade>
+    <p class="eyebrow">Visit us</p>
+    <h2 class="section-title">Sheikh Zayed Road,<br><em>Dubai.</em></h2>
+  </div>
+  <div class="contact__details" data-fade>
+    <div class="contact__item">
+      <span class="contact__lbl">Office</span>
+      <p>Office 3107, BLDG 3<br>Gold &amp; Diamond Park<br>Sheikh Zayed Road<br>Dubai, UAE 37468</p>
+    </div>
+    <div class="contact__item">
+      <span class="contact__lbl">Phone</span>
+      <p><a href="tel:+97142387671" data-cursor>+971 4 238 7671</a></p>
+    </div>
+    <div class="contact__item">
+      <span class="contact__lbl">Email</span>
+      <p><a href="mailto:info@creativehomes.ae" data-cursor>info@creativehomes.ae</a></p>
+    </div>
+    <div class="contact__item">
+      <span class="contact__lbl">Hours</span>
+      <p>Sun–Thu, 09:00 – 18:00</p>
+    </div>
+  </div>
+  <div class="contact__ctas" data-fade>
+    <a href="tel:+97142387671" class="btn-green" data-cursor>Call us <span aria-hidden="true">→</span></a>
+    <a href="https://wa.me/97142387671" target="_blank" rel="noopener" class="btn-outline" data-cursor>WhatsApp <span aria-hidden="true">→</span></a>
+    <a href="mailto:info@creativehomes.ae" class="btn-outline" data-cursor>Email <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__col">
+      <a href="#top" class="footer__brand" data-cursor>Creative <em>Homes</em></a>
+      <p class="footer__line">Dubai's real-estate house. Buy, rent, invest — written down since day one.</p>
+      <p class="footer__line footer__line--small">Office 3107, Gold &amp; Diamond Park, Dubai</p>
+    </div>
+    <div class="footer__col">
+      <h6>Properties</h6>
+      <ul>
+        <li><a href="https://www.creativehomes.ae/property?offeringtype=buy" target="_blank" rel="noopener">Buy</a></li>
+        <li><a href="https://www.creativehomes.ae/property?offeringtype=rent" target="_blank" rel="noopener">Rent</a></li>
+        <li><a href="https://www.creativehomes.ae/off-plan-properties" target="_blank" rel="noopener">Off-Plan</a></li>
+        <li><a href="https://www.creativehomes.ae/featured-property" target="_blank" rel="noopener">Featured</a></li>
+        <li><a href="https://www.creativehomes.ae/list-your-property" target="_blank" rel="noopener">Sell</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h6>Company</h6>
+      <ul>
+        <li><a href="https://www.creativehomes.ae/about" target="_blank" rel="noopener">About Us</a></li>
+        <li><a href="https://www.creativehomes.ae/meet-the-team" target="_blank" rel="noopener">Meet the Team</a></li>
+        <li><a href="https://www.creativehomes.ae/careers" target="_blank" rel="noopener">Careers</a></li>
+        <li><a href="https://www.creativehomes.ae/news" target="_blank" rel="noopener">News</a></li>
+        <li><a href="https://www.creativehomes.ae/guides" target="_blank" rel="noopener">Guides</a></li>
+        <li><a href="https://www.creativehomes.ae/mortgage-calculator" target="_blank" rel="noopener">Mortgage Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h6>Get in touch</h6>
+      <p>Office 3107, BLDG 3<br>Gold &amp; Diamond Park<br>Sheikh Zayed Road, Dubai 37468</p>
+      <p><a href="tel:+97142387671">+971 4 238 7671</a></p>
+      <p><a href="mailto:info@creativehomes.ae">info@creativehomes.ae</a></p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" data-cursor>Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" data-cursor>Facebook</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" data-cursor>YouTube</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" data-cursor>TikTok</a>
+        <a href="https://www.snapchat.com/" target="_blank" rel="noopener" data-cursor>Snapchat</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Creative Homes Real Estate · All rights reserved</span>
+    <div class="footer__legal">
+      <a href="https://www.creativehomes.ae/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+      <a href="#">Terms</a>
+      <a href="#">RERA Compliance</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
